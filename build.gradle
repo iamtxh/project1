@@ -58,22 +58,3 @@ task wrapper(type: Wrapper) {
 	gradleVersion = '3.0'
 }
 
-junitPlatform {
-    //platformVersion '1.0.0-M4'
-    filters {
-		engines {
-			// include 'junit-jupiter', 'junit-vintage'
-			// exclude 'custom-engine'
-		}
-		tags {
-			// include 'fast'
-			exclude 'slow'
-		}
-		// includeClassNamePattern '.*Test'
-	}
-    logManager 'org.apache.logging.log4j.jul.LogManager'
-    //reportsDir file('build/test-results/junit-platform') // this is the default
-    // enableStandardTestTask true
-    // selectors (optional)
-    // filters (optional)
-}
