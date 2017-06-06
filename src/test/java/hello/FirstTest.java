@@ -14,7 +14,7 @@ class FirstTest {
 	@DisplayName("My 1st JUnit 5 test!")
 	void myFirstTest(TestInfo testInfo) {
 		Greeter greeter = new Greeter();
-		assertEquals("Hello world!", gretter.sayHello(), "ERROR!!!");
+		assertEquals("Hello world!", greeter.sayHello(), "ERROR!!!");
 		assertEquals("My 1st JUnit 5 test!", testInfo.getDisplayName(), () -> "TestInfo is injected correctly");
 	}
 
